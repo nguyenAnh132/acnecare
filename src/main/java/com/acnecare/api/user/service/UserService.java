@@ -45,6 +45,8 @@ public class UserService {
     AdminService adminService;
 
     // #region PUBLIC METHODS
+    
+    @Transactional
     public UserResponse createUser(UserCreationRequest request) {
         if (userRepository.existsByEmail(request.getEmail()))
             throw new AppException(ErrorCode.EMAIL_ALREDY_EXISTS);
