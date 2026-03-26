@@ -25,4 +25,4 @@ jobs:
           context: .
           push: true
 
-          tags: nguyenanh132/acnecare-demo-cicd:latest
+          tags: anhnguyen2907/acnecare-demo-cicd:latest
